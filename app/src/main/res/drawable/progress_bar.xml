@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background"><!-- 正常情况下的效果 -->
+        <shape>
+            <corners android:radius="8dip" /><!-- 设置圆角半径 -->
+            <gradient
+
+            android:angle="180"
+            android:centerColor="#ea0b0b"
+            android:centerY="0.5"
+            android:endColor="#ffffff"
+            android:startColor="#758af4" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress"><!-- 进行中的效果 -->
+        <clip>
+            <shape>
+                <corners android:radius="8dip" />
+                <gradient
+                    android:angle="180"
+                    android:centerColor="#000000"
+                    android:centerY="0.5"
+                    android:endColor="#e12328"
+                    android:startColor="#ffffff" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

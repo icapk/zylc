@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sq.sms.MainActivity"
+
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/line1"
+    android:background="#0dd2bf"
+    android:gravity="center_horizontal">
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号"
+            android:id="@+id/editText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="58dp"
+            android:layout_weight="2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:id="@+id/Save_Num"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/editText"
+            android:layout_weight="1"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/line1"
+    android:id="@+id/line2"
+    android:background="#fd7b01"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置时间：20"
+        android:textSize="15dp"
+        />
+
+    <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/year"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="年"
+        android:textSize="15dp"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthr"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="月"
+        android:textSize="15dp"/>
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/day"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日"
+        android:textSize="15dp"/>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/line3"
+    android:layout_below="@+id/line2"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:background="#fd7b01">
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hour"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时"
+        android:textSize="15dp"
+        />
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/min"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分"
+        android:textSize="15dp"/>
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sec"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="秒"
+        android:textSize="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:id="@+id/set_times"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line4"
+        android:layout_below="@+id/line3"
+        android:background="#fd7b01"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置序号："/>
+
+        <EditText
+            android:id="@+id/DingZhi_Num"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置数值："/>
+        <EditText
+        android:id="@+id/DingZhi_Value"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/set_dingzhi"
+            android:text="确定"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line5"
+        android:layout_below="@+id/line4"
+        android:layout_above="@+id/line_4"
+        >
+    <TextView
+        android:id="@+id/order_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#0008ff"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/adc"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line_4"
+        android:layout_above="@+id/line_3"
+        android:background="#0dd2bf"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true">
+        />
+        <Button
+            android:id="@+id/check_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查询时间"/>
+
+        <Button
+            android:id="@+id/check_DingZhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查询定值"/>
+        <Button
+            android:id="@+id/check_zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查询状态"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line_3"
+        android:layout_above="@+id/line_2"
+        android:background="#0dd2bf">
+    <Button
+        android:id="@+id/yufen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="预分"/>
+    <Button
+        android:id="@+id/fenzha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="分闸"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/line_2"
+        android:layout_above="@+id/line_1"
+        android:background="#0dd2bf">
+
+        <Button
+            android:id="@+id/yuhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="预合"/>
+        <Button
+            android:id="@+id/hezha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="合闸"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dingyi"
+        android:id="@+id/line_1"
+        android:background="#0dd2bf">
+        <Button
+            android:id="@+id/check_fugui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="复归"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0dd2bf"
+        android:layout_above="@+id/close"
+        android:id="@+id/dingyi" >
+
+    <Button
+        android:id="@+id/chakan_dingzhi_dingyi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="查看定值定义"
+        android:layout_above="@+id/close"
+        android:layout_alignParentStart="true"
+        />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        android:background="#dc151c"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+</RelativeLayout>
