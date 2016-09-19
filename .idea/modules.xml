@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ZYLC断路器监控.iml" filepath="$PROJECT_DIR$/ZYLC断路器监控.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ZYLC control.iml" filepath="$PROJECT_DIR$/ZYLC control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
